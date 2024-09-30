@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  mongo:
+    image: mongo:7.0.2
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./data:/data/db
+
+  app:
+    build: .
+    volumes:
+      - ./src:/opt/app
+    depends_on:
+      - mongo
