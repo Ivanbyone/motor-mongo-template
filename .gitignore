@@ -1,0 +1,8 @@
+#MacOS
+.idea/
+
+# Python virtual environment
+venv/
+
+# __pycache__ files
+__pycache__/
