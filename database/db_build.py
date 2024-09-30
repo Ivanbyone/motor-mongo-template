@@ -8,14 +8,13 @@ class Users(Collection):
     def __init__(self, connection, database, collection):
         super().__init__(connection, database, collection)
 
-
     async def insert_doc(self, data: dict):
         result = await self.collection.insert_one(data)
         return result
 
 
 class Orders(Collection):
-    #
+
     def __init__(self, connection, database, collection):
         super().__init__(connection, database, collection)
 
@@ -25,5 +24,4 @@ class Orders(Collection):
 
 
 class Products(Collection):
-    #
     pass
