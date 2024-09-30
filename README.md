@@ -20,3 +20,17 @@ As an example, there is a schema of MongoDB entities in the project.
 
 ![Image alt](https://github.com/Ivanbyone/motor-mongo-template/raw/main/image/db_structure.png)
 
+## Local development
+1. Clone this repo:
+```commandline
+git clone https://github.com/Ivanbyone/motor-mongo-template
+```
+2. Replace arguments "YOUR_CONNECTION", "YOUR_DATABASE", "YOUR_COLLECTION" or create secret params.
+3. Run docker-compose command
+```commandline
+docker-compose up --build -d
+```
+
+Now you can make some queries to MongoDB in your localhost.
+
+Have a good development!
